@@ -6,44 +6,44 @@ x = "There are %d types of peoples." % 10
 binary = "binary"
 # Program defines doNot
 doNot = "don't"
-#Program will say, "Those who know binary and those who don't"
+# Program will say, "Those who know binary and those who don't"
 y = "Those who know %s and those who %s" % (binary, doNot)
 
-#Program will print the variable x
+# Program will print the variable x
 print(x)
-#Program will print the variable y
+# Program will print the variable y
 print(y)
 
-#Program will say, "I said:'There are 10 types of peoples.'.:"
+# Program will say, "I said:'There are 10 types of peoples.'.:"
 print("I said:%r.:" % x)
-#Program will say, "I also said: 'Those who know binary and those who don't'."
+# Program will say, "I also said: 'Those who know binary and those who don't'."
 print("I also said: '%s'." % y)
 
-#Program will define hilarious as "True"
+# Program will define hilarious as "True"
 hilarious = True
-#Program will define jokeEvaluation as "Isn't that joke so funny?! %r"
+# Program will define jokeEvaluation as "Isn't that joke so funny?! %r"
 jokeEvaluation = "Isn't that joke so funny?! %r"
 
-#Program will say, "Isn't that joke so funny?! True"
+# Program will say, "Isn't that joke so funny?! True"
 print(jokeEvaluation % hilarious)
 
-#Program will define w as "This is the left side of..."
+# Program will define w as "This is the left side of..."
 w = "This is the left side of..."
-#Program will define e as "a string with a right side"
+# Program will define e as "a string with a right side"
 e = "a string with a right side"
-#Program will print "This is the left side of...a string with a right side"
+# Program will print "This is the left side of...a string with a right side"
 print(w+e)
 
 # More printing fun
-#Program will print "Mary had a little lamb"
+# Program will print "Mary had a little lamb"
 print("Mary had a little lamb")
-#Program will print "Its fleece was white as snow."
+# Program will print "Its fleece was white as snow."
 print("Its fleece was white as %s." % 'snow')
-#Program will print "And everywhere that mary went."
+# Program will print "And everywhere that mary went."
 print("And everywhere that mary went.")
-#Program will print a peroid 10 time
+# Program will print a peroid 10 time
 print("." * 10)
-#Program will define all the end variables as the letters in the word cheeseburger
+# Program will define all the end variables as the letters in the word cheeseburger
 end1 = "C"
 end2 = "h"
 end3 = "e"
@@ -67,7 +67,7 @@ print(formatter % ("Hecc, Hicc, Hacc, Hucc"))
 print(formatter % (True, False, True, True))
 print(formatter % (formatter, formatter, formatter, formatter))
 
-#Why do we use  %r instead of %s in the above example?
+# Why do we use  %r instead of %s in the above example?
 
 # Which should I use on a regular basis?
 
@@ -78,14 +78,14 @@ months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
 print("Here are the days: ", days)
 print("Here are the months: ", months)
 
-if print("""
+print("""
 There's something going on here:
 With the three double quotes.
 We'll be able to type as much as we want
 Even 4 lines if we want, or 5, or 6.
 """)
 
-#examine closely the difference between the %r formatter and the %s formatter
+# examine closely the difference between the %r formatter and the %s formatter
 print("Here are the months: %r" % months)
 print("Here are the months: %s" % months)
 
@@ -104,4 +104,20 @@ print(tabbyCat)
 print(persianCat)
 print(backslashCat)
 print(topCat)
-utq
+
+# Escape Seq              What it does?
+# \\
+# \'
+# \"
+# \a
+# \b
+# \f
+# \N{name}
+# \r
+# \t
+# \uxxxx
+# \Uxxxxxxxx
+# \v
+# \ooo
+# \xhh
+
