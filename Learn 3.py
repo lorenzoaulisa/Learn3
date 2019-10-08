@@ -67,11 +67,12 @@ print(formatter % ("Hecc, Hicc, Hacc, Hucc"))
 print(formatter % (True, False, True, True))
 print(formatter % (formatter, formatter, formatter, formatter))
 
-# Why do we use  %r instead of %s in the above example?
-
+# Why do we use %r instead of %s in the above example?
+# Because we want quotations and also to eliminate special characters
 # Which should I use on a regular basis?
-
+# In my opinion I say %r
 # Why does %r sometimes give me quotes around the things
+
 days = " Mon tues wed thurs fri"
 months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
 
