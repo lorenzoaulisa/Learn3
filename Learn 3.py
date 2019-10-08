@@ -63,17 +63,18 @@ print(end7 + end8 + end9 + end10 + end11 + end12)
 # But wait theres more
 formatter = "%r %r %r %r"
 print(formatter % (1, 2, 3, 4))
-print(formatter % ("Hecc, Hicc, Hacc, Hucc"))
+print(formatter % ("Hecc", "Hicc", "Hacc", "Hucc"))
 print(formatter % (True, False, True, True))
 print(formatter % (formatter, formatter, formatter, formatter))
 
 # Why do we use %r instead of %s in the above example?
-# Because we want quotations and also to eliminate special characters
+# Because we want quotes around the string and also to eliminate special characters
 # Which should I use on a regular basis?
-# In my opinion I say %r
-# Why does %r sometimes give me quotes around the things
+# In my opinion I would say %s because I want to use special characters if I need them. I can always add quotes around!
+# Why does %r sometimes give me quotes around the things?
+# %r put quotes around things defined as strings
 
-days = " Mon tues wed thurs fri"
+days = " Mon tue wed thu fri"
 months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
 
 print("Here are the days: ", days)
@@ -107,18 +108,29 @@ print(backslashCat)
 print(topCat)
 
 # Escape Seq              What it does?
-# \\
-# \'
-# \"
-# \a
-# \b
-# \f
-# \N{name}
-# \r
-# \t
-# \uxxxx
-# \Uxxxxxxxx
-# \v
-# \ooo
-# \xhh
+print("\\")      # backslash
+print("\'")      # quote
+print("\"")      # double quote
+print("\a ")     # ASCII BEL (?)
+print("a\bb ")   # backspace
+print("aa\fdd ") # down of one line, keep same column
+
+x='\N{BLACK SPADE SUIT}'# \N{name} something to do with Unicode symbols
+print(x)
+
+print("aaaa\rddd") #move the character to the beginning of the line without erasing
+print(" \ta  ")  #tab
+
+x='\u0144'  # \uxxxx: something to do with unicode conversion
+print(x)
+
+x='\U0001f63f' #\Uxxxxxxxx" something to do with unicode conversion
+print(x)
+
+
+x='\o12' #\ooo" something that does not do nothing :-( ?????
+print(x)
+
+x='\xe2'  #\hxx something to do with hex conversion
+print(x)
 
