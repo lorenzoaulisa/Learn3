@@ -59,3 +59,48 @@ end12 = "r"
 
 print(end1 + end2 + end3 + end4 + end5 + end6)
 print(end7 + end8 + end9 + end10 + end11 + end12)
+
+# But wait theres more
+formatter = "%r %r %r %r"
+print(formatter % (1, 2, 3, 4))
+print(formatter % ("Hecc, Hicc, Hacc, Hucc"))
+print(formatter % (True, False, True, True))
+print(formatter % (formatter, formatter, formatter, formatter))
+
+#Why do we use  %r instead of %s in the above example?
+
+# Which should I use on a regular basis?
+
+# Why does %r sometimes give me quotes around the things
+days = " Mon tues wed thurs fri"
+months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+
+print("Here are the days: ", days)
+print("Here are the months: ", months)
+
+if print("""
+There's something going on here:
+With the three double quotes.
+We'll be able to type as much as we want
+Even 4 lines if we want, or 5, or 6.
+""")
+
+#examine closely the difference between the %r formatter and the %s formatter
+print("Here are the months: %r" % months)
+print("Here are the months: %s" % months)
+
+# escape sequence redux
+tabbyCat = "\tI'm tabbed in."
+persianCat = "I'm the split\non a line"
+backslashCat = "I'm \\ a \\ cat."
+topCat = """
+I'll do a list:
+\t* Cat food
+\t* Fishies
+\t* Catnip\n\t*Grass
+"""
+
+print(tabbyCat)
+print(persianCat)
+print(backslashCat)
+print(topCat)
