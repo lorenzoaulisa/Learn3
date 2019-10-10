@@ -22,7 +22,7 @@ print("I also said: '%s'." % y)
 # Program will define hilarious as "True"
 hilarious = True
 # Program will define jokeEvaluation as "Isn't that joke so funny?! %r"
-jokeEvaluation = "Isn't that joke so funny?! %r"
+jokeEvaluation = "Isn't that joke so funny?! You have entered the comedy area! %r"
 
 # Program will say, "Isn't that joke so funny?! True"
 print(jokeEvaluation % hilarious)
@@ -41,9 +41,12 @@ print("Mary had a little lamb")
 print("Its fleece was white as %s." % 'snow')
 # Program will print "And everywhere that mary went."
 print("And everywhere that mary went.")
+print("So the duck walked up to the lemonade stand.")
+print("And he said to the man, running the stand.")
+print("Hey, bom, bom, bom, got any grapes?")
 # Program will print a peroid 10 time
 print("." * 10)
-# Program will define all the end variables as the letters in the word cheeseburger
+# Program will define all the end variables as the letters in the phrase "cheeseburger R KOOL!"
 end1 = "C"
 end2 = "h"
 end3 = "e"
@@ -56,9 +59,16 @@ end9 = "r"
 end10 = "g"
 end11 = "e"
 end12 = "r"
+end13 = "R"
+end14 = "K"
+end15 = "O"
+end16 = "O"
+end17 = "L"
+end18 = "!"
 
 print(end1 + end2 + end3 + end4 + end5 + end6)
 print(end7 + end8 + end9 + end10 + end11 + end12)
+print(end13 + end14 + end15 + end16 + end17 + end18)
 
 # But wait theres more
 formatter = "%r %r %r %r"
