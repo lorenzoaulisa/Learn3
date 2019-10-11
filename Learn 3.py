@@ -174,12 +174,12 @@ print("Here are the months: ", months)
 # With the three double quotes.
 # We'll be able to type as much as we want
 # Even 4 lines if we want, or 5, or 6.
-print("""
+print('''
 There's something going on here:
 With the three double quotes.
 We'll be able to type as much as we want
 Even 4 lines if we want, or 5, or 6.
-""")
+''')
 
 # examine closely the difference between the %r formatter and the %s formatter
 # Program will print Here are the months: 'Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug'
@@ -229,7 +229,7 @@ print(NaeNaeCat)
 print("\\")      # Backslash
 print("\'")      # Quote
 print("\"")      # Double quote
-print("\a ")     # ASCII BEL (?)
+print("\a ")     # ASCII BEL (Supposed to make a sound)
 print("a\bb ")   # Backspace
 print("aa\fdd ") # Down of one line, keep same column
 
@@ -251,11 +251,13 @@ print(x)
 x='\xe2'  #\ Hxx something to do with hex conversion
 print(x)
 
-# What does the following code do:
+# q: What does the following code do:
 #   While true:
-#       for i in ["/", "-", "|", "//", "|"]:
-#            print("s\r" % i, end='')
-#   Can you use ''' instead of """ ?
+#                 for i in ["/", "-", "|", "//", "|"]:
+#        print("s\r" % i, end='')
+#  a: When I imputed the code, it prints / - | \ | in quick succession, at the same place. On infinitly may lines
+#  q: Can you use ''' instead of """ ?
+#  a: Yes you can
 
 # Program will define fingers as How many fingers do you have?
 fingers = input("How many fingers do you have?")
@@ -280,3 +282,6 @@ print("So, you have %r amount of fingers and %r units of thickness" % (fingers, 
 # q: What does \a ASCII BEL do?\
 # a: Apparently, the Bell character is the control code used to sound an audible bell or tone in order to alert the user.
 
+while True:
+    for i in ["/","-","|","\\","|"]:
+        print ("%s\r" % i,)
