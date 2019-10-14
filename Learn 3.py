@@ -265,15 +265,15 @@ fingers = input("How many fingers do you have?")
 thickness = input("How thick are you?")
 
 # Program will print So, you have '999999' amount of fingers and '99999999999999999' units of
-# Thickness after the programer enters the answers that the program will use to write the sentence
+# Thickness after the programmer enters the answers that the program will use to write the sentence
 print("So, you have %r amount of fingers and %r units of thickness" % (fingers, thickness))
 
 # Ask 4 or more questions and handle those responses
 # q: When were hexadecimals invented?
 # a: Hex, short for "hexadecimal base counting", was invented in France in the year 770 AD
-# q: When were octodecimals invented?
+# q: When were octaldecimals invented?
 # a: Octal number system was being used in papers as far as 1668, so it must have already been invented at least
-# By the beginning of the seventeeth century
+# By the beginning of the seventeenth century
 # q: Why do we use hexidecimals in programming?
 # a: The main reason why we use hexadecimal numbers is because it is much easier to express binary number
 # representations in hex than it is in any other base number system.
@@ -281,7 +281,3 @@ print("So, you have %r amount of fingers and %r units of thickness" % (fingers, 
 # a: It is the base-8 number system, and uses the digits 0 to 7. ... In the octal system each place is a power of eight.
 # q: What does \a ASCII BEL do?\
 # a: Apparently, the Bell character is the control code used to sound an audible bell or tone in order to alert the user.
-
-while True:
-    for i in ["/","-","|","\\","|"]:
-        print ("%s\r" % i,)
